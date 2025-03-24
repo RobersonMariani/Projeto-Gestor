@@ -1,0 +1,147 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #F1F1F3;
+    ;
+}
+
+.default {
+    background-color: #F1F1F3;
+}
+
+h1,
+h5 {
+    color: #7e7e7e !important;
+}
+
+.content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #BF3137;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+    width: 100%;
+}
+
+/* Estilo aplicado apenas dentro da classe .custom-navbar */
+.custom-navbar .custom-icon,
+.custom-navbar .custom-text {
+    color: #ffffff;
+    font-size: 35px;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.custom-navbar .navbar-brand:hover .custom-icon,
+.custom-navbar .navbar-brand:hover .custom-text {
+    transform: scale(1.2);
+    color: #ffc107;
+    /* Muda para amarelo no hover */
+}
+
+.custom-navbar .navbar-brand:hover .icon-stack .stacked-icon {
+    transform: scale(1.2);
+    color: black;
+}
+
+/* Estilo para sobrepor os ícones */
+.icon-stack {
+    position: relative;
+    display: inline-block;
+}
+
+.icon-stack .custom-icon {
+    position: relative;
+    z-index: 1;
+    /* Ícone de caminhão */
+}
+
+.icon-stack .stacked-icon {
+    position: absolute;
+    top: 6px;
+    /* Ajuste a posição vertical conforme necessário */
+    right: 15px;
+    /* Ajuste a posição horizontal conforme necessário */
+    z-index: 1;
+    /* Ícone de gráfico sobreposto */
+    color: #BF3137;
+    font-size: 20px;
+}
+
+.btn-secondary,
+.bootstrap-select .bs-actionsbox .btn,
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner,
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle {
+    background-color: #bf3137;
+}
+
+.btn-secondary:hover,
+.bootstrap-select .bs-actionsbox .btn:hover {
+    background-color: #8b252a;
+}
+
+.bootstrap-select .bs-actionsbox .btn,
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner,
+.bootstrap-select>.dropdown-toggle.bs-placeholder,
+.bootstrap-select>.dropdown-toggle {
+    color: #ffffff;
+}
+
+.bg-houver-custom:hover{
+    background-color: #BF3137;
+    color: white;
+}
+
+.bootstrap-select.show-tick .dropdown-menu .selected span.check-mark {
+    color: #BF3137;
+}
+
+.nav {
+    background-color: #BF3137 !important;
+}
+
+table.dataTable {
+    border-collapse: collapse !important;
+}
+
+.modal-body td {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+table#analysts thead.custom-table-header,
+table#reports thead.custom-table-header {
+    background-color: #bf313871 !important;
+    color: white !important;
+}
+
+table#analysts thead.custom-table-header th,
+table#reports thead.custom-table-header th {
+    padding: .5rem .5rem !important;
+    background-color: #bf3138d0 !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+.table-responsive {
+    border-radius: 5px !important;
+    box-shadow: rgba(109, 0, 0, 0.24) 0px 3px 8px;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.limited-width {
+    max-width: 20ch; /* Limita a largura a aproximadamente 20 caracteres */
+    word-wrap: break-word; /* Quebra a palavra se for maior que o limite */
+    white-space: normal; /* Permite quebra de linha */
+    word-break: break-word
+}
